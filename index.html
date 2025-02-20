@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Everbloom&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/black-morgan" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="agriculture.css"/>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <section>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i> AGRI<span>CULTURE</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog"><i class="fas fa-blog"></i> Blogs</a></li>
+                </ul>
+                <div class="ms-auto">
+                    <a href="create_account.html"><button class="btn btn-outline-secondary"><i class="fas fa-user-plus"></i> Create an account</button></a>
+                    <a href="login.html"><button class="btn btn-outline-secondary"><i class="fas fa-sign-in-alt"></i> Log in</button></a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+    <!-- HOMEPAGE -->
+    <section id="homepage">
+        <div class="homepage">
+            <h1>Agriculture<span class="span"> Nature's Way to Wellness</span></h1>
+            <p>Cultivating a community of growers, learners, and food enthusiasts, passionate about agriculture and good food.</p>
+            <button class="btn btn-success">Learn More</button>
+        </div>
+    </section>
+    
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="cards">
+            <div class="card"><img src="./images/apples.jpg" alt="Apple tree" /></div>
+            <div class="card"><img src="./images/water-buffalow.jpg" alt="water-buffalow" /></div>
+            <div class="card"><img src="./images/cabbage.jpg" alt="Wite cabbages" /></div>
+            <div class="card"><img src="./images/cucumber.jpg" alt="cucumber-plants" /></div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="aboutus" id="about">
+        <div><h2>ABOUT US</h2></div>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-section">
+                <h3>Why us?</h3>
+                <p>
+                    Ready to grow your farming knowledge? Our blog is your go-to source for the latest trends, 
+                    smart techniques, and sustainability tips. Join our community of farmers and agriculture 
+                    enthusiasts to learn, connect, and cultivate success together!🌱
+                </p>
+                <button class="btn btn-success">Know More</button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./images/farmer.jpg" alt="School Image" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="text-center">
+            <h2 class="section-title">CONTACT US</h2>
+        </div>
+    
+        <div class="container contact-form-section">
+            <h2>Join the Conversation: We'd love to hear from you!</h2>
+    
+            <form id="contactForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="subject" placeholder="Your Subject" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">SEND MESSAGE</button>
+            </form>
+    
+            <div class="text-center mt-3">
+                <a href="contact.html"><button class="btn btn-external" onclick="openExternalContact()">Visit Full Contact Page</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED BLOGS -->
+    <section class="blog-section" id="blog">
+        <h2>Latest Agriculture Blogs</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Blog 1 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog1.jpg" alt="Blog 1">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Sustainable Farming Practices</h3>
+                            <p class="blog-description">Discover the latest sustainable farming techniques for better crop yields and environmental health.</p>
+                            <a href="blog1.html"><button class="btn btn-read-more">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog2.jpg" alt="Blog 2">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Organic Farming Benefits</h3>
+                            <p class="blog-description">Learn how organic farming enhances soil fertility, reduces chemicals, and promotes healthier food.</p>
+                            <a href="blog2.html"><button class="btn btn-read-more">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog3.jpg" alt="Blog 3">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Harvesting Techniques</h3>
+                            <p class="blog-description">Explore modern harvesting methods that maximize productivity while minimizing waste.</p>
+                            <a href="blog3.html"><button class="btn btn-read-more">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 4 -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="blog-card">
+                        <img src="./images/blog4.jpg" alt="Blog 4">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Water Management in Farming</h3>
+                            <p class="blog-description">Find out how to conserve water efficiently and improve irrigation techniques for farming.</p>
+                            <a href="blog4.html"><button class="btn btn-read-more">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- Brand & About -->
+            <div class="col-lg-4 col-md-6 footer-about">
+                <h2 class="footer-title">Agriculture Blog</h2>
+                <p>We share the latest tips, news, and trends in modern agriculture to help farmers and enthusiasts grow better crops and sustain nature.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-lg-2 col-md-3 footer-social">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h5>Subscribe to Newsletter</h5>
+                <form id="newsletterForm">
+                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> AgricultureBlog 2025. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="agriculture.js"></script>
+</body>
+</html>

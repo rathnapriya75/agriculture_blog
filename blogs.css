@@ -1,0 +1,129 @@
+body {
+    font-family: 'Black Morgan', serif;
+    background-color: #b2cf99;
+    color: black;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+.blog-category {
+    font-size: 1rem;
+    color: #3e0330;
+    margin-bottom: 10px;
+}
+
+.blog-img {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.blog-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Search Box */
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+}
+
+/* Author Bio */
+.author-bio {
+    background-color: #ddead1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.author-bio img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.author-bio h4 {
+    font-size: 1.3rem;
+    color: #1b5e20;
+}
+
+.author-bio p {
+    font-size: 1rem;
+    color: #4caf50;
+}
+
+.author-bio .btn {
+    background-color: #66bb6a;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    color: white;
+}
+
+.author-bio .btn:hover {
+    background-color: #388e3c;
+}
+
+/* Categories */
+.categories {
+    background-color: #ddead1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories h5 {
+    font-size: 1.2rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.categories ul li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 1.8rem;
+    }
+
+    .blog-category {
+        font-size: 0.9rem;
+    }
+
+    .blog-text {
+        font-size: 1rem;
+    }
+
+    .author-bio {
+        padding: 15px;
+    }
+
+    .categories {
+        padding: 10px;
+    }
+}
